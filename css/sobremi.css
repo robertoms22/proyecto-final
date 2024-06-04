@@ -1,0 +1,152 @@
+/* hoja de estilo para nft */
+
+
+/* ---------------------------------------------------------------------- */
+/* reset */
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing:border-box;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+/* reset */
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* custom properties */
+:root{
+    --Main-color: #af0eac;
+    --Main-colorAlt: #150015;
+    --Main-colorAlt2: #2A002A;
+    --Color-contrast: #ff5100;
+    --Main-font: monospace;
+}
+/* custom properties */
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* body */
+body{
+    background-color:var(--Main-colorAlt);/* custom properties */
+    font-family: var(--Main-font);
+    text-align: center;
+}
+/* body */
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* header */
+.Header{
+    border:solid .25rem var(--Main-color);/* custom properties */
+    min-height:10vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.Header-a{
+    text-decoration:none;
+    font-size:2rem;
+    font-family:var(--Main-font);/* custom properties */
+    color: var(--Main-color);/* custom properties */
+}
+
+.Header-h1{
+    color: var(--Color-contrast);/* custom properties */
+    font-size: 2rem;
+    font-family: var(--Main-font);/* custom properties */
+}
+
+.Header-h2{
+    color:var(--Main-color);/* custom properties */
+    font-size:2rem;
+    font-family: var(--Main-font);/* custom properties */
+}
+
+.Header-a:hover{
+    color: var(--Color-contrast);/* custom properties */
+}
+/* header */
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* main */
+.Main{
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border-left: solid .25rem var(--Main-color);/* custom properties */
+    border-right: solid .25rem var(--Main-color) ;/* custom properties */
+}
+
+.Main-h3{
+    color: var(--Color-contrast);/* custom properties */
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+@media (max-width:650px){/* para el responsive */
+    .Main-h3{
+        font-size: 1rem;
+    }
+}
+
+
+.Main-span{
+    color: var(--Main-color);/* custom properties */
+    width: 80%;
+    font-size: 2rem;
+}
+
+.Main-div{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main-img{
+    width: 61.25rem;
+}
+/* main */
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* footer */
+.Footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid .25rem var(--Main-color);/* custom properties */
+    padding: 2rem;
+}
+
+.Footer-span{
+    color: var(--Main-color);/* custom properties */
+    font-family: var(--Main-font);/* custom properties */
+    font-size: 1,5rem;
+}
+/* footer */
+/* ---------------------------------------------------------------------- */

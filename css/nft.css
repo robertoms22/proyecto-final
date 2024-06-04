@@ -1,0 +1,146 @@
+/* hoja de estilo para nft */
+
+
+/* ---------------------------------------------------------------------- */
+/* reset */
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing:border-box;
+}
+
+img {
+    width: 100%; /* or max-width: 100%; */
+    height: auto;
+  }
+/* reset */
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* custom properties */
+:root{
+    --Main-color: #af0eac;
+    --Main-colorAlt: #150015;
+    --Main-colorAlt2: #2A002A;
+    --Color-contrast: #ff5100;
+    --Main-font: monospace;
+}
+/* custom properties */
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* body */
+body{
+    background-color:var(--Main-colorAlt);/* custom properties */
+}
+/* body */
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* header */
+.Header{
+    border:solid .25rem var(--Main-color);/* custom properties */
+    min-height:10vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.Header-a{
+    text-decoration:none;
+    font-size:2rem;
+    font-family:var(--Main-font);/* custom properties */
+    color: var(--Main-color);/* custom properties */
+}
+
+.Header-h1{
+    color: var(--Color-contrast);/* custom properties */
+    font-size: 2rem;
+    font-family: var(--Main-font);/* custom properties */
+}
+
+.Header-h2{
+    color:var(--Main-color);/* custom properties */
+    font-size:2rem;
+    font-family: var(--Main-font);/* custom properties */
+}
+
+.Header-a:hover{
+    color: var(--Color-contrast);/* custom properties */
+}
+/* header */
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* main */
+.Main{
+   padding: 5rem;
+   border-left: solid .25rem var(--Main-color);/* custom properties */
+   border-right: solid .25rem var(--Main-color);/* custom properties */
+}
+.Main-div{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    
+}
+
+.Main-a{
+   font-family: var(--Main-font);/* custom properties */
+   text-decoration:none;
+   color: var(--Main-color);/* custom properties */
+}
+
+
+.Main-img{
+    width: 25rem;
+    border: solid .25rem var(--Main-color);/* custom properties */
+}
+
+.Main-img:hover{
+    border: solid .45rem var(--Color-contrast);/* custom properties */
+}
+
+@media (max-width:500px){/* para el responsive */
+    .Main-img{
+        width: 15rem;
+    }
+}
+/* main */
+/* ---------------------------------------------------------------------- */
+
+
+
+
+/* ---------------------------------------------------------------------- */
+/* footer */
+.Footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid .25rem var(--Main-color);/* custom properties */
+    padding: 2rem;
+}
+
+.Footer-span{
+    color: var(--Main-color);/* custom properties */
+    font-family: var(--Main-font);/* custom properties */
+    font-size: 1,5rem;
+}
+/* footer */
+/* ---------------------------------------------------------------------- */

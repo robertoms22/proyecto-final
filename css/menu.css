@@ -1,0 +1,68 @@
+/* hoja de estilo para menu */
+
+
+/* ---------------------------------------------------------------------- */
+/* reset */
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing:border-box;
+}
+/* reset */
+/* ---------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+/* custom properties */
+:root{
+    --Main-color: #af0eac;
+    --Main-colorAlt: #150015;
+    --Main-colorAlt2: #2A002A;
+    --Color-contrast: #ff5100;
+    --Main-font: monospace;
+}
+/* custom properties */
+/* ---------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+/* main */
+.Main-nav{
+    width:100vw;
+    min-height:100vh;
+}
+
+.Main-ul{
+    display:flex;
+    flex-flow:column nowrap;
+}
+
+.Main-li{
+    min-height:25vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:solid .15rem var(--Main-color);/* custom properties */
+    background-color:var(--Main-colorAlt);/* custom properties */
+}
+
+.Main-li:hover{
+    background-color:var(--Main-colorAlt2);/* custom properties */
+    transition:.5s;
+}
+
+.Main-a{
+    font-size:2rem;
+    color:var(--Main-color);/* custom properties */
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:var(--Main-font);/* custom properties */
+}
+
+.Main-a:hover{
+    color:var(--Color-contrast);/* custom properties */
+    
+}
+/* main */
+/* ---------------------------------------------------------------------- */

@@ -1,0 +1,68 @@
+/* hoja de estilo para index */
+
+
+/* ---------------------------------------------------------------------- */
+/* reset */
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing:border-box;
+}
+/* reset */
+/* ---------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+/* custom properties */
+:root{
+    --Main-color: #af0eac;
+    --Main-colorAlt: #150015;
+    --Main-colorAlt2: #2A002A;
+    --Color-contrast: #ff5100;
+    --Main-font: monospace;
+}
+/* custom properties */
+/* ---------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+/* main */
+.Main-div {
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.Main-video {
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.Main-button {
+    position:fixed; 
+    top:70%; 
+    left:50%; 
+    transform:translate(-50%, -50%); 
+    padding:.9375rem 1.25rem;
+    background-color:var(--Main-colorAlt);/* custom properties */
+    color:var(--Main-color);
+    border:solid .1875rem;
+    border-color:var(--Main-color);/* custom properties */
+    cursor:pointer;
+    font-family:var(--Main-font);/* custom properties */
+    font-size:2.5rem;
+}
+
+.Main-button:hover{
+    background-color: var(--Main-colorAlt2);/* custom properties */
+    color: var(--Color-contrast);/* custom properties */
+}
+/* main */
+/* ---------------------------------------------------------------------- */

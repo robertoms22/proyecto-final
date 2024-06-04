@@ -1,0 +1,195 @@
+/* hoja de estilo para juegos */
+
+
+/* ---------------------------------------------------------------------- */
+/* reset */
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing:border-box;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+/* reset */
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* custom properties */
+:root{
+    --Main-color: #af0eac;
+    --Main-colorAlt: #150015;
+    --Main-colorAlt2: #2A002A;
+    --Color-contrast: #ff5100;
+    --Main-font: monospace;
+}
+/* custom properties */
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* body */
+body{
+    background-color:var(--Main-colorAlt);/* custom properties */
+}
+/* body */
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* header */
+.Header{
+    border:solid .25rem var(--Main-color);/* custom properties */
+    min-height:10vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.Header-a{
+    text-decoration:none;
+    font-size:2rem;
+    font-family:var(--Main-font);/* custom properties */
+    color: var(--Main-color);/* custom properties */
+}
+
+.Header-h1{
+    color: var(--Color-contrast);/* custom properties */
+    font-size: 2rem;
+    font-family: var(--Main-font);/* custom properties */
+}
+
+.Header-h2{
+    color:var(--Main-color);/* custom properties */
+    font-size:2rem;
+    font-family: var(--Main-font);/* custom properties */
+}
+
+.Header-a:hover{
+    color: var(--Color-contrast);/* custom properties */
+}
+/* header */
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* main */
+.Main{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-left: solid .25rem var(--Main-color);/* custom properties */
+    border-right: solid .25rem var(--Main-color);/* custom properties */
+}
+
+.Main-div {
+    width: 40%;
+    max-width: 120em;
+    padding: 2em;
+    transition: all 0.4s ease;
+    border: solid .25rem var(--Main-color);/* custom properties */
+    overflow: hidden;
+}
+
+@media (max-width:1000px){/* para el responsive */
+    .Main-div{
+        width: 60%;
+    }
+}
+
+@media (max-width:600px){/* para el responsive */
+    .Main-div{
+        width: 80%;
+    }
+}
+
+@media (max-width:400px){/* para el responsive */
+    .Main-div{
+        width: 90%;
+    }
+}
+  
+.Main-div .Main-divA {
+    width: 200%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+    padding: 2em;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+}
+  
+.Main-div .Main-a  {
+    width: calc( 100% / 2 - 2em);
+    min-height: 10vh;
+    transition: all 0.4s ease;
+    border: solid .25rem var(--Main-color);/* custom properties */
+}
+  
+.Main-div .Main-ul {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+  
+.Main-div .Main-li {
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    border: solid .25rem var(--Main-color);/* custom properties */
+    transition: all 0.4s ease;
+   
+}
+  
+.Main-div .Main-li.active {
+    background-color:var(--Color-contrast);/* custom properties */
+}
+
+.Main-li{
+    cursor: pointer;
+}
+/* main */
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* footer */
+.Footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid .25rem var(--Main-color);/* custom properties */
+    padding: 2rem;
+}
+
+.Footer-span{
+    color: var(--Main-color);/* custom properties */
+    font-family: var(--Main-font);/* custom properties */
+    font-size: 1,5rem;
+}
+/* footer */
+/* ---------------------------------------------------------------------- */
